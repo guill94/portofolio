@@ -26,7 +26,7 @@ a {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	animation: animindex 20s ease-out infinite;
+	animation: animindex 15s ease-out infinite;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
