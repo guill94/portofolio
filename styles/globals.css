@@ -43,8 +43,8 @@ a {
 	text-transform: uppercase;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	margin-bottom: 0.5em;
-	animation-duration: 3s;
-  	animation-name: slidein;
+	/*animation-duration: 3s;
+  	animation-name: slidein;*/
 }
 
 .bgIndex p.infoIndex {

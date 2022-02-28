@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css';
 import img1 from '../public/images/img1.jpg';
 import Nav from '../components/nav'
 import Card from '../components/card';
+import { motion } from 'framer-motion';
 
 
 
@@ -20,7 +21,13 @@ export default function Home() {
       <Nav></Nav>
       <div className="bgIndex">
           
-            <h1><span>Bien</span><span>venue</span></h1>
+            <motion.h1 
+              initial={{y: -550}}
+              animate={{y: 0}}
+              transition={{delay: 0.5, duration: 1}}
+            >
+              <span>Bien</span><span>venue</span>
+            </motion.h1>
             <p className="infoIndex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cntore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi ullam labore facere</p>
         </div>
 
