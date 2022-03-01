@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import img1 from '../public/images/img1.jpg';
-import Nav from '../components/nav'
+import Nav from '../components/nav';
 import Card from '../components/card';
 import { motion } from 'framer-motion';
 
@@ -29,6 +29,7 @@ export default function Home() {
               <span>Bien</span><span>venue</span>
             </motion.h1>
             <p className="infoIndex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cntore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi ullam labore facere</p>
+            <button><a target='_blank' href='/fichiers/CV.pdf'>click me</a></button>
         </div>
 
         <div className='container mt-5'>
