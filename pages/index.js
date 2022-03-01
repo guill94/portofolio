@@ -11,13 +11,15 @@ import { useTranslation } from 'next-i18next';
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['homepage'])),
+      ...(await serverSideTranslations(locale, ['homepage', 'nav'])),
     },
   };
 }
 
 export default function Home() {
+
   const { t } = useTranslation();
+
   return (
     <div className={styles.container}>
 
@@ -34,22 +36,22 @@ export default function Home() {
               animate={{y: 0}}
               transition={{delay: 0.2, duration: 1}}
             >
-              Hello!
+              {t ('hello', {ns: 'homepage'})}
             </motion.h1>
             <motion.p className="infoIndex"
               initial={{y: 550}}
               animate={{y: 0}}
               transition={{delay: 0.7, duration: 1}}
             >
-              My name is Guillaume
+              {t ('intro', {ns: 'homepage'})}
             </motion.p>
-            <p className="infoIndex">{t ('titi', {ns: 'homepage'})}</p>
+         
             <motion.a whileHover={{scale: 1.2, zIndex: 1}} target='_blank' href='/fichiers/CV.pdf' className='custom-button'
               initial={{y: 550}}
               animate={{y: 0}}
               transition={{delay: 0.1, duration: 0.1}}
             >
-              Voir CV
+              {t ('boutoncv', {ns: 'homepage'})}
             </motion.a>
         </div>
 

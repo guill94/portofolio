@@ -1,12 +1,5 @@
 {
-    "connexion": "SIGN IN",
-    "compte": "MY ACCOUNT",
-    "inscription": "SIGN UP",
-    "profil": "PROFILE",
-    "deconnexion": "SIGN OUT",
     "accueil": "Home",
-    "formation": "Training",
-    "developpement": "Development",
-    "projet": "Project",
-    "recrutement": "Recruitment"
+    "projets": "Projects",
+    "a-propos": "About"
 }
