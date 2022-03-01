@@ -24,12 +24,24 @@ export default function Home() {
             <motion.h1 
               initial={{y: -550}}
               animate={{y: 0}}
-              transition={{delay: 0.5, duration: 1}}
+              transition={{delay: 0.2, duration: 1}}
             >
-              <span>Bien</span><span>venue</span>
+              Bienvenue
             </motion.h1>
-            <p className="infoIndex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cntore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi ullam labore facere</p>
-            <button><a target='_blank' href='/fichiers/CV.pdf'>click me</a></button>
+            <motion.p className="infoIndex"
+              initial={{y: 550}}
+              animate={{y: 0}}
+              transition={{delay: 0.7, duration: 1}}
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cntore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi ullam labore facere
+            </motion.p>
+            <motion.a whileHover={{scale: 1.2, zIndex: 1}} target='_blank' href='/fichiers/CV.pdf' className='custom-button'
+              initial={{y: 550}}
+              animate={{y: 0}}
+              transition={{delay: 0.1, duration: 0.1}}
+            >
+              Voir CV
+            </motion.a>
         </div>
 
         <div className='container mt-5'>
