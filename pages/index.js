@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import img1 from '../public/images/img1.jpg';
 import Nav from '../components/nav';
+import Footer from '../components/footer';
 import Card from '../components/card';
 import { motion } from 'framer-motion';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -28,7 +29,9 @@ export default function Home() {
         <meta name="description" content="Portofolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Nav></Nav>
+
+      <Nav/>
+
       <div className="bgIndex">
           
             <motion.h1 
@@ -86,8 +89,8 @@ export default function Home() {
               <Card img={img1} title='title' text='text' link='#' button='Gogo'/>
             </div>
           </div>
-          
         </div>
+        <Footer></Footer>
     </div>
   )
 }
