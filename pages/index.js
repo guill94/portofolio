@@ -119,15 +119,20 @@ export default function Home() {
           <div id='contact'></div>
 
           <h1 className='pt-3 pb-5'>Contact</h1>
-          <p><Image src={mail} width={20} height={20}/> +33(0)673942166</p>
-          <p><Image src={phone} width={20} height={20}/> guillaume.burgnies@hotmail.fr</p>
+          {/*<p><Image src={mail} width={20} height={20}/> +33(0)673942166</p>
+          <p><Image src={phone} width={20} height={20}/> guillaume.burgnies@hotmail.fr</p>*/}
 
-          <form action="https://formsubmit.co/ad535ef9390efd5f29158ba70693cce0" method="POST">
-              
+          <form className='contact-form' action="https://formsubmit.co/ad535ef9390efd5f29158ba70693cce0" method="POST">
+
               <input type="hidden" name="_subject" value="Nouveau message Portofolio"></input>
-              <input type="email" name="email" placeholder="email" required/>
-              <input type="text" name="message" placeholder="Message" required/>
-              <button type="submit">Send</button>
+              <div className="form-group">
+                <input className='form-control' type="email" name="email" placeholder="Email" required/><br/>
+              </div>
+              <div className="form-group">
+                <textarea className='form-control' type="text" name="message" placeholder="Message" required/><br/>
+              </div>
+              <button className='custom-button' type="submit">Envoyer</button>
+
           </form> 
           
         </section>

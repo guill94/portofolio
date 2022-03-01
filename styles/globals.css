@@ -121,7 +121,11 @@ a {
 	text-align: center;
 }
 
-
+/*CONTACT*/
+.contact-form {
+	width: 20em;
+	margin: 0 auto;
+}
 
 @keyframes animindex {
 	0%, 100% {
