@@ -23,19 +23,6 @@ export default function Home() {
 
   const { t } = useTranslation();
 
-  async function handleSubmit (e) {
-    e.preventDefault();
-    const formData = {};
-    Array.from(e.currentTarget.elements).forEach(field => {
-      if (!field.name) return;
-      formData[field.name] = field.value;
-    });
-    fetch('/api/mail', {
-      method: 'post',
-      body: JSON.stringify(formData)
-    })
-  }
-
   return (
     <div className={styles.container}>
 
@@ -134,25 +121,6 @@ export default function Home() {
           <h1 className='pt-3 pb-5'>Contact</h1>
           <p><Image src={mail} width={20} height={20}/> +33(0)673942166</p>
           <p><Image src={phone} width={20} height={20}/> guillaume.burgnies@hotmail.fr</p>
-
-          <form method='post' onSubmit={handleSubmit}>
-            <p>
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" />
-            </p>
-            <p>
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" />
-            </p>
-            <p>
-              <label htmlFor="message">Message</label>
-              <textarea type="text" name="message" />
-            </p>
-            <p>
-              <button type="submit">Submit</button>
-            </p>
-
-          </form>
           
         </section>
 
