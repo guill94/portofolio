@@ -121,6 +121,14 @@ export default function Home() {
           <h1 className='pt-3 pb-5'>Contact</h1>
           <p><Image src={mail} width={20} height={20}/> +33(0)673942166</p>
           <p><Image src={phone} width={20} height={20}/> guillaume.burgnies@hotmail.fr</p>
+
+          <form action="https://formsubmit.co/guillaume.burgnies@hotmail.fr" method="POST">
+              
+              <input type="hidden" name="_subject" value="Nouveau message Portofolio"></input>
+              <input type="email" name="email" placeholder="email" required/>
+              <input type="text" name="message" placeholder="Message" required/>
+              <button type="submit">Send</button>
+          </form> 
           
         </section>
 
