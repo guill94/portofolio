@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import ukflag from '../public/images/ukflag.png';
-import frflag from '../public/images/frflag.png';
+import ukflag from '../public/images/ukflag.PNG';
+import frflag from '../public/images/frflag.PNG';
 import { useRouter } from 'next/router';
 
 
