@@ -7,7 +7,7 @@ import { useRouter } from 'next/router';
 
 const nav = () => {
 
-    const router = useRouter();
+    const Router = useRouter();
 
   return (
  
@@ -29,10 +29,10 @@ const nav = () => {
                         <Link href="#"><a className="nav-link">About</a></Link>
                     </li>
                     <li className="nav-item">
-                        <Link href={router.pathname} locale='fr'><a className="nav-link"><Image src={frflag} /></a></Link>
+                        <Link href={Router.pathname} locale='fr'><a className="nav-link"><Image src={frflag} /></a></Link>
                     </li>
                     <li className="nav-item">
-                        <Link href={router.pathname} locale='en'><a className="nav-link"><Image src={ukflag} /></a></Link>
+                        <Link href={Router.pathname} locale='en'><a className="nav-link"><Image src={ukflag} /></a></Link>
                     </li>
                 </ul>
             </div>
@@ -42,4 +42,4 @@ const nav = () => {
   )
 }
 
-export default nav
+export default nav;
