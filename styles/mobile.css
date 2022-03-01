@@ -1,0 +1,9 @@
+@media screen and (max-width:750px) {
+    .bgIndex h1 {
+        font-size: 3em;
+    }
+    .bgIndex p.infoIndex {
+        font-size: 1em;
+    }
+}
+

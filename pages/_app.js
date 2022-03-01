@@ -1,5 +1,6 @@
 import Head from "next/head";
 import '../styles/globals.css';
+import '../styles/mobile.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Script from "next/script";
 

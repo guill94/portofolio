@@ -35,9 +35,11 @@ a {
 }
 
 .bgIndex h1 {
-	color: rgb(253, 101, 0);
+	color: rgb(0, 128, 247);
 	font-weight: bold;
+	opacity: 0.8;
 	background-color: black;
+	border-radius: 5px;
 	font-size: 5em;
 	padding: 0 10px;
 	text-transform: uppercase;
