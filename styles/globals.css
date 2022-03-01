@@ -15,14 +15,15 @@ a {
   box-sizing: border-box;
 }
 
-/*INDEX*/
+/*HOME IMAGES*/
 
 .bgIndex {
 	
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 94vh;
+	height: 96vh;
+	border-bottom: 3px solid rgb(0, 0, 0);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -45,8 +46,6 @@ a {
 	text-transform: uppercase;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	margin-bottom: 0.5em;
-	/*animation-duration: 3s;
-  	animation-name: slidein;*/
 }
 
 .bgIndex p.infoIndex {
@@ -80,10 +79,49 @@ a {
 	border: 1px solid rgb(0, 0, 0);
 	background-color: rgb(247, 111, 0);
 }
+
+/*PROJECTS*/
 .card {
 	width: 23em;
 	margin: 0 auto;
 }
+.card-link {
+	text-decoration: none;
+	color: black;
+}
+.card-link:hover {
+	color: black;
+}
+.card-button {
+	color: rgb(247, 111, 0);
+	border: 1px solid rgb(247, 111, 0);
+	border-radius: 3px;
+	padding: 5px 5px;
+	text-decoration: none;
+	background-color: rgb(250, 250, 250);
+}
+.card-button:hover {
+	color: rgb(0, 0, 0);
+	border: 1px solid rgb(0, 0, 0);
+	background-color: rgb(247, 111, 0);
+}
+
+
+/*ABOUT*/
+
+.main-about {
+	color: white;
+	background-color: rgb(43, 43, 43);
+	width: 100%;
+	margin: 0 auto;
+}
+
+.main-about p{
+	padding: 0em 5em;
+	text-align: center;
+}
+
+
 
 @keyframes animindex {
 	0%, 100% {
@@ -97,17 +135,7 @@ a {
 	}
 }
 
-@keyframes slidein {
-	from {
-	  margin-top: 100%;
-	  width: 300%;
-	}
-  
-	to {
-	  margin-top: 0%;
-	  width: 100%;
-	}
-  }
+
 
 /*BOOTSTRAP*/
 

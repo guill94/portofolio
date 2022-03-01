@@ -1,5 +1,9 @@
 {
     "hello": "WELCOME",
-    "intro": "My name is Guillaume",
-    "boutoncv": "See CV"
+    "intro": "I'm Guillaume, currently training for Application Designer & Developer",
+    "boutoncv": "See CV",
+    "projets": "Projects",
+    "a-propos": "About",
+    "outils": "Toolbox",
+    "parcours": "I first studied Physics then I turned to Web Development. I underwent a training of Web Developer which I passed succesfully. I also did a placement where I used some frameworks such as React JS or Symfony."
 }

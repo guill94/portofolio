@@ -24,13 +24,13 @@ const Nav = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav ms-auto me-1">
                     <li className="nav-item">
-                        <Link href="#"><a className="nav-link active" aria-current="page">{t ('accueil', {ns: 'nav'})}</a></Link>
+                        <Link href="/#home"><a className="nav-link active" aria-current="page">{t ('accueil', {ns: 'nav'})}</a></Link>
                     </li>
                     <li className="nav-item">
                         <Link href="/#projects"><a className="nav-link">{t ('projets', {ns: 'nav'})}</a></Link>
                     </li>
                     <li className="nav-item">
-                        <Link href="#"><a className="nav-link">{t ('a-propos', {ns: 'nav'})}</a></Link>
+                        <Link href="/#about"><a className="nav-link">{t ('a-propos', {ns: 'nav'})}</a></Link>
                     </li>
                     <li className="nav-item ms-4">
                         <Link href={Router.pathname} locale='fr'><a className="nav-link"><Image src={frflag} /></a></Link>

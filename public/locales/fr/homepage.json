@@ -1,5 +1,9 @@
 {
     "hello": "BIENVENUE",
-    "intro": "Je m'appelle Guillaume",
-    "boutoncv": "Voir CV"
+    "intro": "Je suis Guillaume, actuellement en formation Concepteur Développeur d'Applications ",
+    "boutoncv": "Voir CV",
+    "projets": "Projets",
+    "a-propos": "À propos",
+    "outils": "Boîte à outils",
+    "parcours": "J'ai fait des études de Physique puis je me suis tourné vers le développement web. J'ai éffectué une formation de développeur web et web mobile et j'ai donc obtenu le titre professionnel de Développeur Web et Web Mobile. J'ai également éffectué un stage durant la formation où j'ai utilisé des technologies comme React JS ou encore Symfony."
 }

@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import img1 from '../public/images/img1.jpg';
+import mail from '../public/images/envelope-solid.svg';
+import phone from '../public/images/phone-solid.svg';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
 import Card from '../components/card';
@@ -21,6 +23,19 @@ export default function Home() {
 
   const { t } = useTranslation();
 
+  async function handleSubmit (e) {
+    e.preventDefault();
+    const formData = {};
+    Array.from(e.currentTarget.elements).forEach(field => {
+      if (!field.name) return;
+      formData[field.name] = field.value;
+    });
+    fetch('/api/mail', {
+      method: 'post',
+      body: JSON.stringify(formData)
+    })
+  }
+
   return (
     <div className={styles.container}>
 
@@ -30,6 +45,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <div id='home'></div>
+
       <Nav/>
 
       <div className="bgIndex">
@@ -37,14 +54,14 @@ export default function Home() {
             <motion.h1 
               initial={{y: -550}}
               animate={{y: 0}}
-              transition={{delay: 0.2, duration: 1}}
+              transition={{delay: 0.2, duration: 1, type: 'spring'}}
             >
               {t ('hello', {ns: 'homepage'})}
             </motion.h1>
             <motion.p className="infoIndex"
               initial={{y: 550}}
               animate={{y: 0}}
-              transition={{delay: 0.7, duration: 1}}
+              transition={{delay: 0.7, duration: 1, type: 'spring'}}
             >
               {t ('intro', {ns: 'homepage'})}
             </motion.p>
@@ -52,48 +69,94 @@ export default function Home() {
             <motion.a whileHover={{scale: 1.2, zIndex: 1}} target='_blank' href='/fichiers/CV.pdf' className='custom-button'
               initial={{y: 550}}
               animate={{y: 0}}
-              transition={{delay: 0.1, duration: 0.1}}
+              transition={{delay: 0.1, duration: 0.1, type: 'spring'}}
             >
               {t ('boutoncv', {ns: 'homepage'})}
             </motion.a>
         </div>
 
-        <div className='container mt-5'>
+        <section className='container mt-5'>
 
-          <div id='projects'></div>
+              <div id='projects'></div>
 
-          <div className="row">
+              <h1 className='text-center pt-5'>{t ('projets', {ns: 'homepage'})}</h1>
 
-            <div className="col-xl-4 mt-5">
-              <Card img={img1} title='title' text='text' link='#' button='Gogo'/>
+              <div className="row">
+
+                <div className="col-xl-4 mt-5">
+                  <Card img={img1} title='title' text='text' link='#'/>
+                </div>
+
+                <div className="col-xl-4 mt-5">
+                  <Card img={img1} title='title' text='text' link='#'/>
+                </div>
+
+                <div className="col-xl-4 mt-5">
+                  <Card img={img1} title='title' text='text' link='#'/>
+                </div>
+                
+              </div>
+
+              <div className="row">
+
+                <div className="col-xl-4 mt-5">
+                  <Card img={img1} title='title' text='text' link='#'/>
+                </div>
+
+                <div className="col-xl-4 mt-5">
+                  <Card img={img1} title='title' text='text' link='#'/>
+                </div>
+
+                <div className="col-xl-4 mt-5">
+                  <Card img={img1} title='title' text='text' link='#'/>
+                </div>
             </div>
+        </section>
 
-            <div className="col-xl-4 mt-5">
-              <Card img={img1} title='title' text='text' link='#' button='Gogo'/>
-            </div>
+        <section className='mt-5 main-about'>
 
-            <div className="col-xl-4 mt-5">
-              <Card img={img1} title='title' text='text' link='#' button='Gogo'/>
-            </div>
-            
-          </div>
+          <div id='about'></div>
 
-          <div className="row">
+          <h1 className='text-center pt-3'>{t ('a-propos', {ns: 'homepage'})}</h1>
+          <p>{t ('parcours', {ns: 'homepage'})}</p>
 
-            <div className="col-xl-4 mt-5">
-              <Card img={img1} title='title' text='text' link='#' button='Gogo'/>
-            </div>
+          <h3 className='text-center pt-5 mb-3'>{t ('outils', {ns: 'homepage'})}</h3>
 
-            <div className="col-xl-4 mt-5">
-              <Card img={img1} title='title' text='text' link='#' button='Gogo'/>
-            </div>
+          <p>HTML - CSS - JavaScript - PHP - C# - Java</p>
+          <p className='pb-4'>React JS - Next JS - Vue JS - Symfony - Spring Boot</p>
 
-            <div className="col-xl-4 mt-5">
-              <Card img={img1} title='title' text='text' link='#' button='Gogo'/>
-            </div>
-          </div>
-        </div>
-        <Footer></Footer>
+        </section>
+
+        <section className='text-center'>
+
+          <div id='contact'></div>
+
+          <h1 className='pt-3 pb-5'>Contact</h1>
+          <p><Image src={mail} width={20} height={20}/> +33(0)673942166</p>
+          <p><Image src={phone} width={20} height={20}/> guillaume.burgnies@hotmail.fr</p>
+
+          <form method='post' onSubmit={handleSubmit}>
+            <p>
+              <label htmlFor="name">Name</label>
+              <input type="text" name="name" />
+            </p>
+            <p>
+              <label htmlFor="email">Email</label>
+              <input type="text" name="email" />
+            </p>
+            <p>
+              <label htmlFor="message">Message</label>
+              <textarea type="text" name="message" />
+            </p>
+            <p>
+              <button type="submit">Submit</button>
+            </p>
+
+          </form>
+          
+        </section>
+
+        <Footer/>
     </div>
   )
 }
