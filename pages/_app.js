@@ -3,6 +3,7 @@ import '../styles/globals.css';
 import '../styles/mobile.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Script from "next/script";
+import { appWithTranslation } from 'next-i18next';
 
 
 
@@ -22,4 +23,4 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
-export default MyApp
+export default appWithTranslation(MyApp);

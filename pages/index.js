@@ -5,11 +5,19 @@ import img1 from '../public/images/img1.jpg';
 import Nav from '../components/nav';
 import Card from '../components/card';
 import { motion } from 'framer-motion';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 
-
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['homepage'])),
+    },
+  };
+}
 
 export default function Home() {
-
+  const { t } = useTranslation();
   return (
     <div className={styles.container}>
 
@@ -26,15 +34,16 @@ export default function Home() {
               animate={{y: 0}}
               transition={{delay: 0.2, duration: 1}}
             >
-              Bienvenue
+              Hello!
             </motion.h1>
             <motion.p className="infoIndex"
               initial={{y: 550}}
               animate={{y: 0}}
               transition={{delay: 0.7, duration: 1}}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cntore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi ullam labore facere
+              My name is Guillaume
             </motion.p>
+            <p className="infoIndex">{t ('titi', {ns: 'homepage'})}</p>
             <motion.a whileHover={{scale: 1.2, zIndex: 1}} target='_blank' href='/fichiers/CV.pdf' className='custom-button'
               initial={{y: 550}}
               animate={{y: 0}}

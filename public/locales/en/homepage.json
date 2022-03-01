@@ -1,0 +1,40 @@
+{
+    "titi": "titieng",
+
+    "button": {
+        "en savoir plus": "Find out more",
+        "partenaires": "PARTNERS",
+        "laissez le votre": "Leave yours",
+        "retour aux avis": "Go Back",
+        "envoyer": "Send"
+    },
+
+
+    "main1": {
+        "qui sommes nous": "WHO ARE WE?",
+        "expertise": "ASSESSMENT",
+        "savoir faire": "KNOW-HOW",
+        "nos services": "OUR SERVICES"
+        
+    },
+
+    "main2": {
+        "formation": "TRAINING",
+        "developpement": "DEVELOPMENT",
+        "projet": "PROJECT"
+        
+        
+    },
+
+    "main3": {
+        "conditions d'entrées": "ENTRY CONDITIONS"
+    },
+
+    "main4": {
+        "votre avis compte": "YOUR OPINION MATTERS",
+        "veuillez vous connecter": "Please sign in",
+        "se connecter": "Sign in",
+        "laissez votre avis": "Give us your feedback",
+        "profession": "Your job"
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "titi": "titifr",
+
+    "button": {
+        "en savoir plus": "En savoir plus",
+        "partenaires": "PARTENAIRES",
+        "laissez le votre": "Laissez le vôtre",
+        "retour aux avis": "Retour aux avis",
+        "envoyer": "Envoyer"
+    },
+
+
+    "main1": {
+        "qui sommes nous": "Qui sommes nous  ?",
+        "expertise": "Expertise",
+        "savoir faire": "Savoir faire",
+        "nos services": "Nos services"
+        
+    },
+
+    "main2": {
+        "formation": "Formation",
+        "developpement": "Développement",
+        "projet": "Projet"
+    },
+
+    "main3": {
+        "conditions d'entrées": "CONDITIONS D'ENTRÉE"
+    },
+
+    "main4": {
+        "votre avis compte": "VOTRE AVIS COMPTE",
+        "veuillez vous connecter": "Veuillez vous connecter",
+        "se connecter": "Se connecter",
+        "laissez votre avis": "Laissez votre avis",
+        "profession": "Votre profession"
+    }
+}
