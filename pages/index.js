@@ -122,7 +122,7 @@ export default function Home() {
           <p><Image src={mail} width={20} height={20}/> +33(0)673942166</p>
           <p><Image src={phone} width={20} height={20}/> guillaume.burgnies@hotmail.fr</p>
 
-          <form action="https://formsubmit.co/guillaume.burgnies@hotmail.fr" method="POST">
+          <form action="https://formsubmit.co/ad535ef9390efd5f29158ba70693cce0" method="POST">
               
               <input type="hidden" name="_subject" value="Nouveau message Portofolio"></input>
               <input type="email" name="email" placeholder="email" required/>
