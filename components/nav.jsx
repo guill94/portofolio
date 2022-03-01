@@ -5,9 +5,12 @@ import ukflag from '../public/images/ukflag.png';
 import frflag from '../public/images/frflag.png';
 import { useRouter } from 'next/router';
 
-const nav = () => {
+
+
+const Nav = () => {
 
     const Router = useRouter();
+
 
   return (
  
@@ -42,4 +45,4 @@ const nav = () => {
   )
 }
 
-export default nav;
+export default Nav;
