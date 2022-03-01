@@ -59,33 +59,36 @@ export default function Home() {
         </div>
 
         <div className='container mt-5'>
+
           <div id='projects'></div>
-          <div className="row mt-3">
 
-            <div className="col-xl-4">
+          <div className="row">
+
+            <div className="col-xl-4 mt-5">
               <Card img={img1} title='title' text='text' link='#' button='Gogo'/>
             </div>
 
-            <div className="col-xl-4">
+            <div className="col-xl-4 mt-5">
               <Card img={img1} title='title' text='text' link='#' button='Gogo'/>
             </div>
 
-            <div className="col-xl-4">
+            <div className="col-xl-4 mt-5">
               <Card img={img1} title='title' text='text' link='#' button='Gogo'/>
             </div>
+            
           </div>
 
-          <div className="row mt-5">
+          <div className="row">
 
-            <div className="col-xl-4">
+            <div className="col-xl-4 mt-5">
               <Card img={img1} title='title' text='text' link='#' button='Gogo'/>
             </div>
 
-            <div className="col-xl-4">
+            <div className="col-xl-4 mt-5">
               <Card img={img1} title='title' text='text' link='#' button='Gogo'/>
             </div>
 
-            <div className="col-xl-4">
+            <div className="col-xl-4 mt-5">
               <Card img={img1} title='title' text='text' link='#' button='Gogo'/>
             </div>
           </div>
