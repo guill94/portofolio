@@ -4,6 +4,8 @@ import styles from '../styles/Home.module.css';
 import img1 from '../public/images/img1.jpg';
 import uni1 from '../public/projects_images/uni1.PNG';
 import animaux1 from '../public/projects_images/animaux1.PNG';
+import bsn1 from '../public/projects_images/bsn1.PNG';
+import postyours1 from '../public/projects_images/postyours1.png';
 import algo1 from '../public/projects_images/algo1.PNG';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
@@ -71,25 +73,43 @@ export default function Home() {
 
               <h1 className='text-center pt-5'>{t ('projets', {ns: 'homepage'})}</h1>
 
+
               <div className="row">
+
+                  <div className="col-xl-4 mt-5">
+                    <Card img={bsn1} title={t ('cards.bsn', {ns: 'homepage'})} text='text' linkPage='/projects/bsn'>
+                      <WebsiteButton linkSite="#"/>
+                    </Card>
+                  </div>
+
+                  <div className="col-xl-4 mt-5">
+                    <Card img={postyours1} title={t ('cards.postyours', {ns: 'homepage'})} text='text' linkPage='/projects/postyours'>
+                      <WebsiteButton linkSite="#"/>
+                      <GitButton linkGit="https://github.com/guill94/postyours"/>
+                    </Card>
+                  </div>
 
                   <div className="col-xl-4 mt-5">
                     <Card img={uni1} title={t ('cards.uni', {ns: 'homepage'})} text='text' linkPage='/projects/fiber'>
                       <WebsiteButton linkSite="http://physique.unice.fr/sem6/2016-2017/PagesWeb/PT/Fibre/index.html"/>
                     </Card>
                   </div>
+                
+              </div>
+              
+              <div className="row">
 
-                  <div className="col-xl-4 mt-5">
-                    <Card img={animaux1} title='title' text='text' linkPage='#'>
-                      <WebsiteButton linkSite="#"/>
-                      <GitButton linkGit="#"/>
+                  <div className="col-xl-6 mt-5">
+                    <Card img={animaux1} title={t ('cards.animaux', {ns: 'homepage'})} text='text' linkPage='/projects/site_animaux'>
+                      <WebsiteButton linkSite="https://guill94.github.io/site_animaux/"/>
+                      <GitButton linkGit="https://github.com/guill94/site_animaux/"/>
                     </Card>
                   </div>
 
-                  <div className="col-xl-4 mt-5">
-                    <Card img={algo1 } title='title' text='text' linkPage='#'>
-                      <WebsiteButton linkSite="#"/>
-                      <GitButton linkGit="#"/>
+                  <div className="col-xl-6 mt-5">
+                    <Card img={algo1 } title={t ('cards.algo', {ns: 'homepage'})} text='text' linkPage='/projects/algorithmes'>
+                      <WebsiteButton linkSite="https://guill94.github.io/js_algo/"/>
+                      <GitButton linkGit="https://github.com/guill94/js_algo"/>
                     </Card>
                   </div>
                 
@@ -126,6 +146,9 @@ export default function Home() {
               <input type="hidden" name="_next" value="https://guillaume-burgnies.vercel.app/thankyou"></input>
               <div className="form-group">
                 <input className='form-control' type="email" name="email" placeholder="Email" required/><br/>
+              </div>
+              <div className="form-group">
+                <input className='form-control' type="text" name="nom" placeholder={t ('name', {ns: 'homepage'})} required/><br/>
               </div>
               <div className="form-group">
                 <textarea className='form-control' type="text" name="message" placeholder="Message" required/><br/>

@@ -11,10 +11,13 @@
     "envoyer": "Send",
     "retour": "Back",
     "merci": "Your message has been sent successfully",
+    "name": "Full name",
 
     "cards": {
         "uni": "Showcase Website (University)",
-        "animaux": "Site des animaux",
-        "algo": "Algorithmes JavaScript"
+        "animaux": "Animals Website",
+        "algo": "JavaScript Algorithms",
+        "bsn": "BS Next Website",
+        "postyours": "Postyours Website"
     }
 }

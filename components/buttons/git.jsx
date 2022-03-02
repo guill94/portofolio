@@ -6,14 +6,13 @@ import github from '../../public/images/github-brands.svg';
 
 const Git = (props) => {
   return (
-    <Link href={props.linkGit} >
-        <motion.a href='' className="card-button me-1"
+        <motion.a href={props.linkGit} className="card-button me-1" target='_blank'
             whileHover={{ scale: 1.2}}
         >
             <Image width={20} height={20} src={github}/>
             <span className='ms-1'>GitHub</span>
         </motion.a>
-    </Link>
+
   )
 }
 

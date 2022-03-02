@@ -58,11 +58,11 @@ const Projects = (props) => {
                 
             </div>
 
-            <section className='mt-5 container'>
+            <section className='mt-5 mb-3 container'>
                 <p>{props.main}</p>
             </section>
 
-            <section className='text-center'>
+            <section className='text-center mt-3'>
                 {props.children}
             </section>
 

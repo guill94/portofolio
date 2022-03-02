@@ -123,8 +123,14 @@ a {
 
 /*CONTACT*/
 .contact-form {
-	width: 20em;
+	width: 40em;
 	margin: 0 auto;
+}
+.contact-form input {
+	border: 2px solid rgb(247, 111, 0);
+}
+.contact-form textarea {
+	border: 2px solid rgb(247, 111, 0);
 }
 
 @keyframes animindex {
