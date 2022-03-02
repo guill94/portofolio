@@ -67,7 +67,7 @@ const Projects = (props) => {
             </section>
 
             <section className='text-center mt-5'>
-                <button className='custom-button'>{t ('retour', {ns: 'homepage'})}</button>
+                <a href="/#projects" className='custom-button'>{t ('retour', {ns: 'homepage'})}</a>
             </section>
 
         <Footer/>

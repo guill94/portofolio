@@ -121,6 +121,7 @@ export default function Home() {
           <form className='contact-form' action="https://formsubmit.co/ad535ef9390efd5f29158ba70693cce0" method="POST">
 
               <input type="hidden" name="_subject" value="Nouveau message Portofolio"></input>
+              <input type="hidden" name="_next" value="https://guillaume-burgnies.vercel.app/thankyou"></input>
               <div className="form-group">
                 <input className='form-control' type="email" name="email" placeholder="Email" required/><br/>
               </div>
