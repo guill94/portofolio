@@ -2,11 +2,12 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import img1 from '../public/images/img1.jpg';
-import mail from '../public/images/envelope-solid.svg';
-import phone from '../public/images/phone-solid.svg';
+import uni1 from '../public/projects_images/uni1.PNG';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
 import Card from '../components/card';
+import GitButton from '../components/buttons/git';
+import WebsiteButton from '../components/buttons/website';
 import { motion } from 'framer-motion';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
@@ -70,34 +71,29 @@ export default function Home() {
 
               <div className="row">
 
-                <div className="col-xl-4 mt-5">
-                  <Card img={img1} title='title' text='text' linkGit='#' linkPage='/projects/fiber'/>
-                </div>
+                  <div className="col-xl-4 mt-5">
+                    <Card img={uni1} title={t ('cards.uni', {ns: 'homepage'})} text='text' linkPage='/projects/fiber'>
+                      <WebsiteButton linkSite="http://physique.unice.fr/sem6/2016-2017/PagesWeb/PT/Fibre/index.html"/>
+                    </Card>
+                  </div>
 
-                <div className="col-xl-4 mt-5">
-                  <Card img={img1} title='title' text='text' linkGit='#' linkPage='#'/>
-                </div>
+                  <div className="col-xl-4 mt-5">
+                    <Card img={uni1} title='title' text='text' linkPage='#'>
+                      <WebsiteButton linkSite="#"/>
+                      <GitButton linkGit="#"/>
+                    </Card>
+                  </div>
 
-                <div className="col-xl-4 mt-5">
-                  <Card img={img1} title='title' text='text' linkGit='#' linkPage='#'/>
-                </div>
+                  <div className="col-xl-4 mt-5">
+                    <Card img={uni1} title='title' text='text' linkPage='#'>
+                      <WebsiteButton linkSite="#"/>
+                      <GitButton linkGit="#"/>
+                    </Card>
+                  </div>
                 
               </div>
 
-              <div className="row">
-
-                <div className="col-xl-4 mt-5">
-                  <Card img={img1} title='title' text='text' linkGit='#' linkPage='#'/>
-                </div>
-
-                <div className="col-xl-4 mt-5">
-                  <Card img={img1} title='title' text='text' linkGit='#' linkPage='#'/>
-                </div>
-
-                <div className="col-xl-4 mt-5">
-                  <Card img={img1} title='title' text='text' linkGit='#' linkPage='#'/>
-                </div>
-            </div>
+              
         </section>
 
         <section className='mt-5 main-about'>
@@ -131,7 +127,7 @@ export default function Home() {
               <div className="form-group">
                 <textarea className='form-control' type="text" name="message" placeholder="Message" required/><br/>
               </div>
-              <button className='custom-button' type="submit">Envoyer</button>
+              <button className='custom-button' type="submit">{t ('envoyer', {ns: 'homepage'})}</button>
 
           </form> 
           
