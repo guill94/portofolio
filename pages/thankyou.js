@@ -27,10 +27,10 @@ const Thankyou = () => {
             <meta name="description" content="Portofolio" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
-        <h1>
+        <h1 className='mb-5'>
             {t ('merci', {ns: 'homepage'})}
         </h1>
-        <Link href="/"><a className='custom-button mt-5'>{t ('retour', {ns: 'homepage'})}</a></Link>
+        <Link href="/"><a className='custom-button'>{t ('retour', {ns: 'homepage'})}</a></Link>
     </div>
   )
 }

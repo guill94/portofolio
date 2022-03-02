@@ -19,11 +19,11 @@ const Card = (props) => {
               </a>
             </Link>
             <div className="card-body">
-                <h5 className="card-title">{props.title}</h5>
-                <p className="card-text">{props.text}</p>
+                <h5 className="card-title mb-5">{props.title}</h5>
+                {/*<p className="card-text">{props.text}</p>*/}
 
                 <div className='text-center'>
-                  
+
                   {props.children}
 
                   <Link href={props.linkPage}>

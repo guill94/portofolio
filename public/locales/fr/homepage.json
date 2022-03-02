@@ -13,6 +13,8 @@
     "merci": "Votre message a bien été envoyé",
 
     "cards": {
-        "uni": "Site vitrine (Université)"
+        "uni": "Site vitrine (Université)",
+        "animaux": "Site des animaux",
+        "algo": "Algorithmes JavaScript"
     }
 }

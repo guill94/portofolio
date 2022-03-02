@@ -3,6 +3,8 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import img1 from '../public/images/img1.jpg';
 import uni1 from '../public/projects_images/uni1.PNG';
+import animaux1 from '../public/projects_images/animaux1.PNG';
+import algo1 from '../public/projects_images/algo1.PNG';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
 import Card from '../components/card';
@@ -78,14 +80,14 @@ export default function Home() {
                   </div>
 
                   <div className="col-xl-4 mt-5">
-                    <Card img={uni1} title='title' text='text' linkPage='#'>
+                    <Card img={animaux1} title='title' text='text' linkPage='#'>
                       <WebsiteButton linkSite="#"/>
                       <GitButton linkGit="#"/>
                     </Card>
                   </div>
 
                   <div className="col-xl-4 mt-5">
-                    <Card img={uni1} title='title' text='text' linkPage='#'>
+                    <Card img={algo1 } title='title' text='text' linkPage='#'>
                       <WebsiteButton linkSite="#"/>
                       <GitButton linkGit="#"/>
                     </Card>

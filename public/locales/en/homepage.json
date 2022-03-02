@@ -13,6 +13,8 @@
     "merci": "Your message has been sent successfully",
 
     "cards": {
-        "uni": "Showcase Website (University)"
+        "uni": "Showcase Website (University)",
+        "animaux": "Site des animaux",
+        "algo": "Algorithmes JavaScript"
     }
 }
