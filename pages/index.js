@@ -71,15 +71,15 @@ export default function Home() {
               <div className="row">
 
                 <div className="col-xl-4 mt-5">
-                  <Card img={img1} title='title' text='text' link='#'/>
+                  <Card img={img1} title='title' text='text' linkGit='#' linkPage='/projects/fiber'/>
                 </div>
 
                 <div className="col-xl-4 mt-5">
-                  <Card img={img1} title='title' text='text' link='#'/>
+                  <Card img={img1} title='title' text='text' linkGit='#' linkPage='#'/>
                 </div>
 
                 <div className="col-xl-4 mt-5">
-                  <Card img={img1} title='title' text='text' link='#'/>
+                  <Card img={img1} title='title' text='text' linkGit='#' linkPage='#'/>
                 </div>
                 
               </div>
@@ -87,15 +87,15 @@ export default function Home() {
               <div className="row">
 
                 <div className="col-xl-4 mt-5">
-                  <Card img={img1} title='title' text='text' link='#'/>
+                  <Card img={img1} title='title' text='text' linkGit='#' linkPage='#'/>
                 </div>
 
                 <div className="col-xl-4 mt-5">
-                  <Card img={img1} title='title' text='text' link='#'/>
+                  <Card img={img1} title='title' text='text' linkGit='#' linkPage='#'/>
                 </div>
 
                 <div className="col-xl-4 mt-5">
-                  <Card img={img1} title='title' text='text' link='#'/>
+                  <Card img={img1} title='title' text='text' linkGit='#' linkPage='#'/>
                 </div>
             </div>
         </section>

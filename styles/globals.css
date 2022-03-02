@@ -141,6 +141,96 @@ a {
 
 
 
+/*******PROJECTS CAROUSEL********/
+
+.main-carousel {
+	background-color: #313131;
+	height: 35vw;
+    user-select: none;
+    
+}
+
+[type=radio] {
+  display: none;
+}
+
+#slider {
+  height: 30vw;
+  position: relative;
+  top: 3em;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transform: translate3d(0,0,-300px);
+}
+
+#slider label {
+  margin: auto;
+  width: 70%;
+  height: 100%;
+  border-radius: 4px;
+  position: absolute;
+  left: 0; right: 0;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+
+#s1:checked ~ #slide5, #s2:checked ~ #slide6,
+#s3:checked ~ #slide1, #s4:checked ~ #slide2,
+#s5:checked ~ #slide3, #s6:checked ~ #slide4 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(-10%,0,-200px);
+}
+
+#s1:checked ~ #slide6, #s2:checked ~ #slide1,
+#s3:checked ~ #slide2, #s4:checked ~ #slide3,
+#s5:checked ~ #slide4, #s6:checked ~ #slide5 {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(-25%,0,-180px);
+}
+
+	#s1:checked ~ #slide1, #s2:checked ~ #slide2,
+	#s3:checked ~ #slide3, #s4:checked ~ #slide4,
+	#s5:checked ~ #slide5, #s6:checked ~ #slide6 {
+	  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+	  transform: translate3d(0,0,0);
+	}
+
+#s1:checked ~ #slide2, #s2:checked ~ #slide3,
+#s3:checked ~ #slide4, #s4:checked ~ #slide5,
+#s5:checked ~ #slide6, #s6:checked ~ #slide1 {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(25%,0,-180px);
+}
+
+#s1:checked ~ #slide3, #s2:checked ~ #slide4,
+#s3:checked ~ #slide5, #s4:checked ~ #slide6,
+#s5:checked ~ #slide1, #s6:checked ~ #slide2 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(10%,0,-200px);
+}
+#s1:checked ~ #slide4, #s2:checked ~ #slide5,
+#s3:checked ~ #slide6, #s4:checked ~ #slide1,
+#s5:checked ~ #slide2, #s6:checked ~ #slide3 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(10%,0,-300px);
+}
+table, th, td {
+  border:1px solid black;
+  padding: 1px 2px 1px 2px;
+}
+.quiz-question {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.quiz-choice {
+    font-size: 1.2em;
+}
+.text-deco {
+    text-decoration: none !important;
+}
+
+
 /*BOOTSTRAP*/
 
 .nav-link {
