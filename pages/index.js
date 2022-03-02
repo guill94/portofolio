@@ -78,13 +78,11 @@ export default function Home() {
 
                   <div className="col-xl-4 mt-5">
                     <Card img={bsn1} title={t ('cards.bsn', {ns: 'homepage'})} text='text' linkPage='/projects/bsn'>
-                      <WebsiteButton linkSite="#"/>
                     </Card>
                   </div>
 
                   <div className="col-xl-4 mt-5">
                     <Card img={postyours1} title={t ('cards.postyours', {ns: 'homepage'})} text='text' linkPage='/projects/postyours'>
-                      <WebsiteButton linkSite="#"/>
                       <GitButton linkGit="https://github.com/guill94/postyours"/>
                     </Card>
                   </div>
