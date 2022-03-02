@@ -13,7 +13,7 @@ export async function getStaticProps({ locale }) {
   }
 
 
-const fiber = () => {
+const Fiber = () => {
 
     const { t } = useTranslation();
 
@@ -25,4 +25,4 @@ const fiber = () => {
   )
 }
 
-export default fiber
+export default Fiber
