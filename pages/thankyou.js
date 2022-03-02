@@ -29,7 +29,7 @@ const Thankyou = () => {
         <h1>
             {t ('merci', {ns: 'homepage'})}
         </h1>
-        <a href="/" className='custom-button mt-5'>{t ('retour', {ns: 'homepage'})}</a>
+        <Link href="/"><a className='custom-button mt-5'>{t ('retour', {ns: 'homepage'})}</a></Link>
     </div>
   )
 }
