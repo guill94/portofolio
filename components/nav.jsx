@@ -19,9 +19,9 @@ const Nav = () => {
         <div className="container-fluid">
             <Link href="#"><a className="navbar-brand ms-4">Guillaume Burgnies</a></Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="line"></span> 
-                <span class="line"></span> 
-                <span class="line"></span>
+                <span className="line"></span> 
+                <span className="line"></span> 
+                <span className="line"></span>
             </button>
             
             <div className="collapse navbar-collapse" id="navbarNav">
