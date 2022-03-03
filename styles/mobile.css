@@ -51,3 +51,22 @@
         top: 2em;
       }
 }
+@media screen and (max-width:500px) {
+    .main-carousel {
+        height: 47vw;
+    }
+}
+@media screen and (max-width:450px) {
+    .main-carousel {
+        height: 49vw;
+    }
+}
+@media screen and (max-width:400px) {
+    .main-carousel {
+        height: 44vw;
+    }
+    #slider {
+        height: 34vw;
+        top: 1em;
+      }
+}
