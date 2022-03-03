@@ -116,12 +116,20 @@ export default function Home() {
               
         </section>
 
-        <section className='mt-5 main-about'>
+        <section className='mt-5 main-about text-center'>
 
           <div id='about'></div>
 
           <h1 className='text-center pt-3'>{t ('a-propos', {ns: 'homepage'})}</h1>
           <p>{t ('parcours', {ns: 'homepage'})}</p>
+
+          <motion.a whileHover={{scale: 1.2, zIndex: 1}} target='_blank' href='/fichiers/DOSSIER_PROJET.pdf' className='custom-button'
+              initial={{y: 550}}
+              animate={{y: 0}}
+              transition={{delay: 0.1, duration: 0.1, type: 'spring'}}
+            >
+              {t ('boutondp', {ns: 'homepage'})}
+          </motion.a>
 
           <h3 className='text-center pt-5 mb-3'>{t ('outils', {ns: 'homepage'})}</h3>
 

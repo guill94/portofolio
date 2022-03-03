@@ -11,3 +11,43 @@
     }
 }
 
+
+
+/*CAROUSEL*/
+@media screen and (max-width:1500px) {
+    .main-carousel {
+        height: 39vw;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .main-carousel {
+        height: 41vw;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .main-carousel {
+        height: 43vw;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .main-carousel {
+        height: 44vw;
+    }
+}
+@media screen and (max-width:650px) {
+    .main-carousel {
+        height: 46vw;
+    }
+}
+@media screen and (max-width:550px) {
+    .main-carousel {
+        height: 45vw;
+    }
+    #slider {
+        height: 34vw;
+        top: 2em;
+      }
+}

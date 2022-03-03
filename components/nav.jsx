@@ -19,8 +19,11 @@ const Nav = () => {
         <div className="container-fluid">
             <Link href="#"><a className="navbar-brand ms-4">Guillaume Burgnies</a></Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
+                <span class="line"></span> 
+                <span class="line"></span> 
+                <span class="line"></span>
             </button>
+            
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav ms-auto me-1">
                     <li className="nav-item">
@@ -32,10 +35,10 @@ const Nav = () => {
                     <li className="nav-item">
                         <Link href="/#about"><a className="nav-link">{t ('a-propos', {ns: 'nav'})}</a></Link>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item me-4">
                         <Link href="/#contact"><a className="nav-link">Contact</a></Link>
                     </li>
-                    <li className="nav-item ms-4">
+                    <li className="nav-item">
                         <Link href={Router.pathname} locale='fr'><a className="nav-link"><Image src={frflag} /></a></Link>
                     </li>
                     <li className="nav-item">

@@ -33,6 +33,7 @@ const Animaux = () => {
             img3={img3}
             img4={img4}
             main={t ('animaux', {ns: 'projects'})}
+            tech="HTML - CSS - JavaScript"
         >
             <WebsiteButton linkSite="https://guill94.github.io/site_animaux/"/>
             <GitButton linkGit="https://github.com/guill94/site_animaux"/>

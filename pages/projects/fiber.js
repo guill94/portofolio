@@ -33,6 +33,7 @@ const Fiber = () => {
             img3={img3}
             img4={img4}
             main={t ('uni', {ns: 'projects'})}
+            tech="HTML - CSS - JavaScript"
         >
             <WebsiteButton linkSite="http://physique.unice.fr/sem6/2016-2017/PagesWeb/PT/Fibre/index.html"/>
             <GitButton linkGit="#"/>

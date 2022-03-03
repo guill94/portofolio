@@ -2,6 +2,6 @@
     "uni": "This project was done when I was at university as part of an internship on fiber optics. This is a showcase site that was used during the oral defence, serving as a support for the presentation.",
     "animaux": "Showcase site to present 9 different animals, their names, their descriptions, their habitats.",
     "algo": "Site with algorithms in JavaScript and the hangman game as well.",
-    "postyours": "",
-    "bsn": ""
+    "postyours": "This is a personal project, made for the web developer certification. The site allows users to share images by specifying a title, description and category. Users can also leave a comment on an image. The project file for certification is available down below.",
+    "bsn": "This is the project carried out during my placement in a company (BS Next), my goal was to create a \"showcase\" website. This should make it possible to promote the company and present the services it offers. I used this site for the title of web developer (the postyours project as well), the certification project file is available down below"
 }

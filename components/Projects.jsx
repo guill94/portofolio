@@ -59,10 +59,16 @@ const Projects = (props) => {
             </div>
 
             <section className='mt-5 mb-3 container'>
-                <p>{props.main}</p>
+                <h3 className='mb-3'>Description :</h3>
+                <p>{props.main}</p><br/>
             </section>
 
-            <section className='text-center mt-3'>
+            <section className='mt-3 mb-3 container'>
+                <h3 className='mb-3'>Technologies :</h3>
+                <p>{props.tech}</p><br/>
+            </section>
+
+            <section className='text-center'>
                 {props.children}
             </section>
 

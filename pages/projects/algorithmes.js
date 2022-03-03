@@ -33,6 +33,7 @@ const Algo = () => {
             img3={img3}
             img4={img4}
             main={t ('algo', {ns: 'projects'})}
+            tech="HTML - CSS - JavaScript"
         >
             <WebsiteButton linkSite="https://guill94.github.io/js_algo/"/>
             <GitButton linkGit="https://github.com/guill94/js_algo"/>

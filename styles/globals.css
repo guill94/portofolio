@@ -15,6 +15,22 @@ a {
   box-sizing: border-box;
 }
 
+/*NAVBAR*/
+.navbar-toggler{
+	width: 47px;
+	height: 37px;
+	background-color: #555555 !important;
+}
+.navbar-toggler .line{
+	width: 100%;
+	float: left;
+	height: 2px;
+	background-color: #fff;
+	margin-bottom: 4px;
+}
+.navbar-toggler .line:first-child{
+	margin-top: 3px;
+}
 /*HOME IMAGES*/
 
 .bgIndex {
