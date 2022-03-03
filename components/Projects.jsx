@@ -30,25 +30,25 @@ const Projects = (props) => {
                     <input type="radio" name="slider" id="s4" />
 
                     <label htmlFor="s1" id="slide1">
-                            <Image src={props.img1} layout="fill"/>
+                            <Image src={props.img1} layout="fill" alt="image site"/>
                             <div className="carousel-caption">
                                     
                             </div>
                     </label>
                     <label htmlFor="s2" id="slide2">
-                            <Image src={props.img2} layout="fill"/>
+                            <Image src={props.img2} layout="fill" alt="image site"/>
                             <div className="carousel-caption">
                                     
                             </div>
                     </label>
                     <label htmlFor="s3" id="slide3">
-                            <Image src={props.img3} layout="fill"/>
+                            <Image src={props.img3} layout="fill" alt="image site"/>
                             <div className="carousel-caption">
                                     
                             </div>
                     </label>
                     <label htmlFor="s4" id="slide4">
-                            <Image src={props.img4} layout="fill"/>
+                            <Image src={props.img4} layout="fill" alt="image site"/>
                             <div className="carousel-caption">
                                     
                             </div>

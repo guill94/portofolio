@@ -15,7 +15,7 @@ const Card = (props) => {
           <motion.div className="card" whileHover={{scale: 1.23, zIndex: 1}}>
             <Link href={props.linkPage}>
               <a>
-                <Image src={props.img} className="card-img-top" alt={props.alt}/>
+                <Image src={props.img} className="card-img-top" alt="Image Site"/>
               </a>
             </Link>
             <div className="card-body">

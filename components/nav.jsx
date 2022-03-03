@@ -39,10 +39,10 @@ const Nav = () => {
                         <Link href="/#contact"><a className="nav-link">Contact</a></Link>
                     </li>
                     <li className="nav-item">
-                        <Link href={Router.pathname} locale='fr'><a className="nav-link"><Image src={frflag} /></a></Link>
+                        <Link href={Router.pathname} locale='fr'><a className="nav-link"><Image src={frflag} alt="FR"/></a></Link>
                     </li>
                     <li className="nav-item">
-                        <Link href={Router.pathname} locale='en'><a className="nav-link"><Image src={ukflag} /></a></Link>
+                        <Link href={Router.pathname} locale='en'><a className="nav-link"><Image src={ukflag} alt="EN"/></a></Link>
                     </li>
                 </ul>
             </div>

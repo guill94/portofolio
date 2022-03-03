@@ -15,19 +15,19 @@ const Footer = () => {
         <section className="mb-4">
           
           <a className="btn btn-floating m-1" href="#" role="button"
-            ><Image width={20} height={20} src={fb}/></a>
+            ><Image width={20} height={20} src={fb} alt="Facebook"/></a>
 
           
           <a className="btn btn-floating m-1" href="#" role="button">
-          <Image width={20} height={20} src={tw}/>
+          <Image width={20} height={20} src={tw} alt="Twitter"/>
            </a>
 
            <a className="btn btn-floating m-1" href="#" role="button">
-          <Image width={20} height={20} src={insta}/>
+          <Image width={20} height={20} src={insta} alt="Insta"/>
            </a>
 
            <a className="btn btn-floating m-1" href="#" role="button">
-          <Image width={20} height={20} src={lk}/>
+          <Image width={20} height={20} src={lk} alt="Linkedin"/>
            </a>
   
         </section>

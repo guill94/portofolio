@@ -9,7 +9,7 @@ const Git = (props) => {
         <motion.a href={props.linkGit} className="card-button me-1" target='_blank'
             whileHover={{ scale: 1.2}}
         >
-            <Image width={20} height={20} src={github}/>
+            <Image width={20} height={20} src={github} alt="GitHub Icon"/>
             <span className='ms-1'>GitHub</span>
         </motion.a>
 
