@@ -5,5 +5,9 @@
     .bgIndex p.infoIndex {
         font-size: 1em;
     }
+        /*CONTACT*/
+    .contact-form {
+        width: 20em;
+    }
 }
 
