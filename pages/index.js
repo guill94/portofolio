@@ -143,8 +143,7 @@ export default function Home() {
           <div id='contact'></div>
 
           <h1 className='pt-3 pb-5'>Contact</h1>
-          {/*<p><Image src={mail} width={20} height={20}/> +33(0)673942166</p>
-          <p><Image src={phone} width={20} height={20}/> guillaume.burgnies@hotmail.fr</p>*/}
+          
 
           <form className='contact-form' action="https://formsubmit.co/ad535ef9390efd5f29158ba70693cce0" method="POST">
 
