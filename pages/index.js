@@ -121,7 +121,7 @@ export default function Home() {
           <div id='about'></div>
 
           <h1 className='text-center pt-3'>{t ('a-propos', {ns: 'homepage'})}</h1>
-          <p>{t ('parcours', {ns: 'homepage'})}</p>
+          <p className='container'>{t ('parcours', {ns: 'homepage'})}</p>
 
           <motion.a whileHover={{scale: 1.2, zIndex: 1}} target='_blank' href='/fichiers/DOSSIER_PROJET.pdf' className='custom-button'
               initial={{y: 550}}
