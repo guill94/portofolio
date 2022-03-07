@@ -116,7 +116,7 @@ export default function Home() {
               
         </section>
 
-        <section className='mt-5 main-about text-center'>
+        <section className='mt-5 main-about text-center container'>
 
           <div id='about'></div>
 
