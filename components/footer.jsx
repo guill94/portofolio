@@ -16,11 +16,11 @@ const Footer = () => {
         
         <section className="mb-4">
 
-           <a className="btn btn-floating m-1" href="https://github.com/guill94" target="_blank" role="button">
+           <a className="btn btn-floating m-1" href="https://github.com/guill94" target="_blank" rel="noreferrer" role="button">
           <Image width={20} height={20} src={github} alt="GitHub"/>
            </a>
 
-           <a className="btn btn-floating m-1" href="https://www.linkedin.com/in/guillaume-burgnies-00bb9b1b5/" target="_blank" role="button">
+           <a className="btn btn-floating m-1" href="https://www.linkedin.com/in/guillaume-burgnies-00bb9b1b5/" target="_blank" rel="noreferrer" role="button">
           <Image width={20} height={20} src={lk} alt="Linkedin"/>
            </a>
   
