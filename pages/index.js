@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-import img1 from '../public/images/img1.jpg';
 import uni1 from '../public/projects_images/uni1.PNG';
 import animaux1 from '../public/projects_images/animaux1.PNG';
 import bsn1 from '../public/projects_images/bsn1.PNG';
