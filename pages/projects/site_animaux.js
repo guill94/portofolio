@@ -8,7 +8,7 @@ import img3 from '../../public/projects_images/animaux3.PNG';
 import img4 from '../../public/projects_images/animaux4.PNG';
 import GitButton from '../../components/buttons/git';
 import WebsiteButton from '../../components/buttons/website';
-import { Head } from 'next/head';
+import Head  from 'next/head';
 
 
 export async function getStaticProps({ locale }) {

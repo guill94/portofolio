@@ -8,7 +8,7 @@ import img3 from '../../public/projects_images/postyours3.png';
 import img4 from '../../public/projects_images/postyours4.png';
 import GitButton from '../../components/buttons/git';
 import { motion } from 'framer-motion';
-import { Head } from 'next/head';
+import Head  from 'next/head';
 
 
 

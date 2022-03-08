@@ -7,7 +7,7 @@ import img2 from '../../public/projects_images/bsn2.PNG';
 import img3 from '../../public/projects_images/bsn3.PNG';
 import img4 from '../../public/projects_images/bsn4.PNG';
 import { motion } from 'framer-motion';
-import { Head } from 'next/head';
+import Head  from 'next/head';
 
 
 export async function getStaticProps({ locale }) {
