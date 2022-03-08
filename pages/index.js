@@ -50,8 +50,8 @@ export default function Home() {
               {t ('hello', {ns: 'homepage'})}
             </motion.h1>
             <motion.p className="infoIndex"
-              initial={{y: 550}}
-              animate={{y: 0}}
+              initial={{x: -1550}}
+              animate={{x: 0}}
               transition={{delay: 0.7, duration: 1, type: 'spring'}}
             >
               {t ('intro', {ns: 'homepage'})}
