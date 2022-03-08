@@ -6,9 +6,8 @@ import img1 from '../../public/projects_images/bsn1.PNG';
 import img2 from '../../public/projects_images/bsn2.PNG';
 import img3 from '../../public/projects_images/bsn3.PNG';
 import img4 from '../../public/projects_images/bsn4.PNG';
-import GitButton from '../../components/buttons/git';
-import WebsiteButton from '../../components/buttons/website';
 import { motion } from 'framer-motion';
+import { Head } from 'next/head';
 
 
 export async function getStaticProps({ locale }) {
@@ -27,6 +26,11 @@ const Bsn = () => {
 
   return (
     <div>
+        <Head>
+          <title> 🖥 {t ('cards.bsn', {ns: 'homepage'})}</title>
+          <meta name="description" content="Portofolio" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
         <Projects 
             title={t ('cards.bsn', {ns: 'homepage'})}
             img1={img1}

@@ -26,6 +26,11 @@ const Algo = () => {
 
   return (
     <div>
+        <Head>
+          <title> 🖥 {t ('cards.algo', {ns: 'homepage'})}</title>
+          <meta name="description" content="Portofolio" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
         <Projects 
             title={t ('cards.algo', {ns: 'homepage'})}
             img1={img1}

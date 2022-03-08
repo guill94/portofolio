@@ -8,6 +8,7 @@ import img3 from '../../public/projects_images/uni3.PNG';
 import img4 from '../../public/projects_images/uni4.PNG';
 import GitButton from '../../components/buttons/git';
 import WebsiteButton from '../../components/buttons/website';
+import { Head } from 'next/head';
 
 
 export async function getStaticProps({ locale }) {
@@ -26,6 +27,11 @@ const Fiber = () => {
 
   return (
     <div>
+      <Head>
+        <title> 🖥 {t ('cards.uni', {ns: 'homepage'})}</title>
+        <meta name="description" content="Portofolio" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
         <Projects 
             title={t ('cards.uni', {ns: 'homepage'})}
             img1={img1}
