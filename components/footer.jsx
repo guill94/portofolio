@@ -32,7 +32,7 @@ const Footer = () => {
       
       <div className="text-center p-3" >
         © 2021 - {date.getFullYear()}
-        <p className="text-white ms-2">Made by Guillaume BURGNIES with Next J</p>
+        <p className="text-white ms-2">Made by Guillaume BURGNIES with Next JS</p>
       </div>
       
     </footer>
