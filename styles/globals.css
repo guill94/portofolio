@@ -161,6 +161,29 @@ a {
 	}
 }
 
+@-moz-keyframes animindex {
+	0%, 100% {
+		background-image: url(/images/fondindex1.jpg);
+	}
+	33.3% {
+		background-image: url(/images/fondindex2.jpg);
+	}
+	66.6% {
+		background-image: url(/images/fondindex3.jpg);
+	}
+}
+
+@-webkit-keyframes animindex {
+	0%, 100% {
+		background-image: url(/images/fondindex1.jpg);
+	}
+	33.3% {
+		background-image: url(/images/fondindex2.jpg);
+	}
+	66.6% {
+		background-image: url(/images/fondindex3.jpg);
+	}
+}
 
 
 /*******PROJECTS CAROUSEL********/
