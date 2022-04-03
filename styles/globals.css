@@ -44,8 +44,8 @@ a {
 	background-size: cover;
 	background-position: center;
 	animation: animindex 15s ease-out infinite;
-	-webkit-animation: animindex 15s ease-out infinite;
-	-moz-animation: animindex 15s ease-out infinite;
+	-webkit-animation: animindexw 15s ease-out infinite;
+	-moz-animation: animindexm 15s ease-out infinite;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -163,7 +163,7 @@ a {
 	}
 }
 
-@-moz-keyframes animindex {
+@-moz-keyframes animindexm {
 	0%, 100% {
 		background-image: url(/images/fondindex1.jpg);
 	}
@@ -175,7 +175,7 @@ a {
 	}
 }
 
-@-webkit-keyframes animindex {
+@-webkit-keyframes animindexw {
 	0%, 100% {
 		background-image: url(/images/fondindex1.jpg);
 	}
