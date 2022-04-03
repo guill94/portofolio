@@ -44,6 +44,8 @@ a {
 	background-size: cover;
 	background-position: center;
 	animation: animindex 15s ease-out infinite;
+	-webkit-animation: animindex 15s ease-out infinite;
+	-moz-animation: animindex 15s ease-out infinite;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
