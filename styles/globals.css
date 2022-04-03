@@ -209,6 +209,8 @@ a {
   top: 3em;
   perspective: 1000px;
   transform-style: preserve-3d;
+  -webkit-transform: translate3d(0,0,-300px);
+  -moz-transform: translate3d(0,0,-300px);
   transform: translate3d(0,0,-300px);
 }
 
@@ -220,6 +222,8 @@ a {
   position: absolute;
   left: 0; right: 0;
   cursor: pointer;
+  -webkit-transition: transform 0.4s ease;
+  -moz-transition: transform 0.4s ease;
   transition: transform 0.4s ease;
 }
 
