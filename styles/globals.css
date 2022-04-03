@@ -43,9 +43,9 @@ a {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	-webkit-animation: animindex 15s ease-out infinite;
+	-moz-animation: animindex 15s ease-out infinite;
 	animation: animindex 15s ease-out infinite;
-	-webkit-animation: animindexw 15s ease-out infinite;
-	-moz-animation: animindexm 15s ease-out infinite;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -151,31 +151,33 @@ a {
 	border: 2px solid rgb(247, 111, 0);
 }
 
+
+@-moz-keyframes animindex {
+	0%, 100% {
+		background-image: url(/images/fondindex1.jpg);
+	}
+	33.3% {
+		background-image: url(/images/fondindex2.jpg);
+	}
+	66.6% {
+		background-image: url(/images/fondindex3.jpg);
+	}
+}
+
+@-webkit-keyframes animindex {
+	0%, 100% {
+		background-image: url(/images/fondindex1.jpg);
+	}
+	33.3% {
+		background-image: url(/images/fondindex2.jpg);
+	}
+	66.6% {
+		background-image: url(/images/fondindex3.jpg);
+	}
+}
+
+
 @keyframes animindex {
-	0%, 100% {
-		background-image: url(/images/fondindex1.jpg);
-	}
-	33.3% {
-		background-image: url(/images/fondindex2.jpg);
-	}
-	66.6% {
-		background-image: url(/images/fondindex3.jpg);
-	}
-}
-
-@-moz-keyframes animindexm {
-	0%, 100% {
-		background-image: url(/images/fondindex1.jpg);
-	}
-	33.3% {
-		background-image: url(/images/fondindex2.jpg);
-	}
-	66.6% {
-		background-image: url(/images/fondindex3.jpg);
-	}
-}
-
-@-webkit-keyframes animindexw {
 	0%, 100% {
 		background-image: url(/images/fondindex1.jpg);
 	}
