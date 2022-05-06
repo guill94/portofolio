@@ -9,6 +9,7 @@ import img4 from '../../public/projects_images/postyours4.png';
 import GitButton from '../../components/buttons/git';
 import { motion } from 'framer-motion';
 import Head  from 'next/head';
+import Image from 'next/image';
 
 
 
@@ -42,6 +43,8 @@ const Postyours = () => {
             main={t ('postyours', {ns: 'projects'})}
             tech="Twig - Symfony"
         >
+
+
             <GitButton linkGit="https://github.com/guill94/postyours"/>
             <motion.a whileHover={{scale: 1.2, zIndex: 1}} target='_blank' href='/fichiers/DOSSIER_PROJET.pdf' className='card-button'
               initial={{y: 550}}
