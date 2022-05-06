@@ -43,12 +43,16 @@ a {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	-webkit-animation: animindex 15s ease-out infinite;
+	-moz-animation: animindex 15s ease-out infinite;
+	-ms-animation: animindex 15s ease-out infinite;
 	animation: animindex 15s ease-out infinite;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center; 
+	top: 0;
 }
 
 .bgIndex h1 {
@@ -149,7 +153,8 @@ a {
 	border: 2px solid rgb(247, 111, 0);
 }
 
-@keyframes animindex {
+
+@-moz-keyframes animindex {
 	0%, 100% {
 		background-image: url(/images/fondindex1.jpg);
 	}
@@ -161,6 +166,30 @@ a {
 	}
 }
 
+@-webkit-keyframes animindex {
+	0%, 100% {
+		background-image: url(/images/fondindex1.jpg);
+	}
+	33.3% {
+		background-image: url(/images/fondindex2.jpg);
+	}
+	66.6% {
+		background-image: url(/images/fondindex3.jpg);
+	}
+}
+
+
+@keyframes animindex {
+	0%, 100% {
+		background-image: url(/images/fondindex1.jpg);
+	}
+	33.3% {
+		background-image: url(/images/fondindex2.jpg);
+	}
+	66.6% {
+		background-image: url(/images/fondindex3.jpg);
+	}
+}
 
 
 /*******PROJECTS CAROUSEL********/
@@ -182,6 +211,9 @@ a {
   top: 3em;
   perspective: 1000px;
   transform-style: preserve-3d;
+  -webkit-transform: translate3d(0,0,-300px);
+  -moz-transform: translate3d(0,0,-300px);
+  -ms-transform: translate3d(0,0,-300px);
   transform: translate3d(0,0,-300px);
 }
 
@@ -193,6 +225,9 @@ a {
   position: absolute;
   left: 0; right: 0;
   cursor: pointer;
+  -webkit-transition: transform 0.4s ease;
+  -moz-transition: transform 0.4s ease;
+  -ms-transition: transform 0.4s ease;
   transition: transform 0.4s ease;
 }
 
@@ -201,24 +236,36 @@ a {
 #s1:checked ~ #slide4, #s2:checked ~ #slide1,
 #s3:checked ~ #slide2, #s4:checked ~ #slide3 {
   box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  -webkit-transform: translate3d(-25%,0,-150px);
+  -moz-transform: translate3d(-25%,0,-150px);
+  -ms-transform: translate3d(-25%,0,-150px);
   transform: translate3d(-25%,0,-150px);
 }
 
 	#s1:checked ~ #slide1, #s2:checked ~ #slide2,
 	#s3:checked ~ #slide3, #s4:checked ~ #slide4 {
 	  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+	-webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
 	  transform: translate3d(0,0,0);
 	}
 
 #s1:checked ~ #slide2, #s2:checked ~ #slide3,
 #s3:checked ~ #slide4, #s4:checked ~ #slide1 {
   box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  -webkit-transform: translate3d(-25%,0,-150px);
+  -moz-transform: translate3d(-25%,0,-150px);
+  -ms-transform: translate3d(-25%,0,-150px);
   transform: translate3d(25%,0,-150px);
 }
 
 #s1:checked ~ #slide3, #s2:checked ~ #slide4,
 #s3:checked ~ #slide1, #s4:checked ~ #slide2 {
   box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  -webkit-transform: translate3d(10%,0,-200px);
+  -moz-transform: translate3d(10%,0,-200px);
+  -ms-transform: translate3d(10%,0,-200px);
   transform: translate3d(10%,0,-200px);
 }
 
